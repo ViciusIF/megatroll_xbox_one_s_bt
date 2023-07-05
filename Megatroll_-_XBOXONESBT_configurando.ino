@@ -44,11 +44,11 @@ void setup() {
 
   //------------------------------ Modificação ------------------------------
   
-  //pinos digitais do motor
+  //pinos pwm do motor
   pinMode(pinMotF, OUTPUT);
   pinMode(pinMotB, OUTPUT);
   
-  //pino digital do servomotor
+  //pino pwm do servomotor
   servo_direcao.attach(pinServo);
 
   //------------------------------ FIM ------------------------------
