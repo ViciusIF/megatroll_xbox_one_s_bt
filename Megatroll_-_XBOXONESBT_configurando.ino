@@ -69,7 +69,7 @@ void loop() {
 
   if (Xbox.connected()) {
 
-  //------------------------------
+  //------------------------------ Modificação ------------------------------
     
     //Serial.print("\nConectado"); // print em monitor serial que o status do controle é "Conectado"
 
@@ -82,7 +82,7 @@ void loop() {
     //Gatilho esquerdo (LT) => freio e ré da roda traseria
     analogWrite(pinMotB, map(Xbox.getButtonPress(LT), 0, 1023, 0, 255));
     
-  //------------------------------
+  //------------------------------ FIM ------------------------------
     
     if (Xbox.getAnalogHat(LeftHatX) > 7500 || Xbox.getAnalogHat(LeftHatX) < -7500 || Xbox.getAnalogHat(LeftHatY) > 7500 || Xbox.getAnalogHat(LeftHatY) < -7500 || Xbox.getAnalogHat(RightHatX) > 7500 || Xbox.getAnalogHat(RightHatX) < -7500 || Xbox.getAnalogHat(RightHatY) > 7500 || Xbox.getAnalogHat(RightHatY) < -7500) {
       if (Xbox.getAnalogHat(LeftHatX) > 7500 || Xbox.getAnalogHat(LeftHatX) < -7500) { 
