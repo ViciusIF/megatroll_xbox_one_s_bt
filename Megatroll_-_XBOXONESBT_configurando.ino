@@ -4,6 +4,7 @@
  send me an e-mail:  lauszus@gmail.com
  */
 
+//------------------------------ Modificação ------------------------------
 
  //definindo pinos do motor
 #define pinMotF 5
@@ -16,7 +17,7 @@
 // nomeando o servo
 Servo servo_direcao;
 
-
+//------------------------------ FIM ------------------------------
 
 #include <XBOXONESBT.h>
 #include <usbhub.h>
@@ -41,7 +42,7 @@ XBOXONESBT Xbox(&Btd, PAIR);
 
 void setup() {
 
-  //------------------------------
+  //------------------------------ Modificação ------------------------------
   
   //pinos digitais do motor
   pinMode(pinMotF, OUTPUT);
@@ -50,7 +51,7 @@ void setup() {
   //pino digital do servomotor
   servo_direcao.attach(pinServo);
 
-  //------------------------------
+  //------------------------------ FIM ------------------------------
   
   Serial.begin(115200);
 #if !defined(__MIPSEL__)
